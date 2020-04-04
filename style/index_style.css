@@ -1,0 +1,26 @@
+div {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: gold;
+	box-shadow: 0 -200px 100px -120px crimson inset;
+	animation: background 8s infinite alternate;
+}
+
+@keyframes background {
+  100% {
+    background: skyblue;
+    box-shadow: 0 -200px 100px -100px yellowgreen inset;
+  }
+}
+
+#floors {
+	margin-top: 180px;
+	text-align: center;
+}
+
+h2 {
+	margin-top: 15px;
+}
