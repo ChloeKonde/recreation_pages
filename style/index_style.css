@@ -4,20 +4,11 @@ div {
 	left: 0;
 	height: 100%;
 	width: 100%;
-	background: gold;
-	box-shadow: 0 -200px 100px -120px crimson inset;
-	animation: background 8s infinite alternate;
-}
-
-@keyframes background {
-  100% {
-    background: skyblue;
-    box-shadow: 0 -200px 100px -100px yellowgreen inset;
-  }
+	background: linear-gradient(#0194e1, #001c2a)
 }
 
 #floors {
-	margin-top: 180px;
+	margin-top: 150px;
 	text-align: center;
 }
 
