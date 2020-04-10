@@ -1,0 +1,27 @@
+{
+  "name": "recreation_pages",
+  "version": "1.0.0",
+  "description": "",
+  "main": "client.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChloeKonde/recreation_pages.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChloeKonde/recreation_pages/issues"
+  },
+  "homepage": "https://github.com/ChloeKonde/recreation_pages#readme",
+  "dependencies": {
+    "bluebird": "^3.7.2",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "pg-promise": "^10.5.0"
+  }
+}

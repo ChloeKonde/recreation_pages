@@ -1,39 +1,47 @@
 <!doctype html>
 <html>
+
 <head>
 <meta charset="utf-8">
 <title>Third floor</title>
 <link rel="stylesheet" type="text/css" href="style/floors_style.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Comfortaa" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
+
 <body>
-
-<script async src="script/script.js"></script>
-<div class="image">
-<span id="asi">lll</span>
-<img src="images/third.png" usemap="#Map" alt="lol">
-<map name="Map">
-  <area shape="poly" onClick="getAndSet(1)" coords="66,156,134,156,154,136,153,70,92,73,68,95" href="#">
-  <area shape="rect" onClick="getAndSet(2)" coords="277,35,297,72" href="#">
-  <area shape="rect" onClick="getAndSet(3)" coords="278,96,295,136" href="#">
-  <area shape="rect" onClick="getAndSet(2)" coords="448,36,466,70" href="#">
-  <area shape="rect" coords="570,34,591,71" href="#">
-  <area shape="rect" coords="634,36,678,73" href="#">
-  <area shape="rect" coords="634,96,659,135" href="#">
-  <area shape="rect" coords="782,36,826,71" href="#">
-  <area shape="rect" coords="923,70,977,95" href="#">
-  <area shape="rect" coords="877,89,903,95" href="#">
-  <area shape="rect" coords="866,164,900,185" href="#">
-  <area shape="rect" coords="901,210,906,227" href="#">
-  <area shape="poly" coords="939,434,877,371,885,364,901,364,901,350,974,349,977,358,995,375" href="#">
-  <area shape="rect" coords="90,280,133,300" href="#">
-  <area shape="rect" coords="32,450,68,472" href="#">
-  <area shape="rect" coords="31,533,67,552" href="#">
-  <area shape="rect" coords="30,637,69,678" href="#">
-  <area shape="rect" coords="93,637,132,658" href="#">
-  <area shape="rect" coords="161,866,182,901" href="#">
-  <area shape="rect" coords="294,918,322,926" href="#">
-</map>	
+<div class="map">
+  <svg viewbox="0 0 1000 1000">
+    <path class="zone" id="31" d="m 295.31446,917.97861 c 5.43064,0 27.52773,0 27.52773,0 v 6.92875 h -28.27678 v -7.30328 z" fill="#ff0000b8" data='' onclick="setDesc(this)"/>
+    <path class="zone" id="32" d="m 161.79562,867.41748 h 19.4754 v 33.14563 h -19.28814 z" fill="#000" data='' onclick="setDesc(this)"/>
+    <path class="zone" id="33" d="m 31.085733,636.33438 h 37.265426 v 42.13428 h -36.8909 z" fill="#0000FF" data='' onclick="setDesc(this)"/>
+    <path class="zone" id="34" d="M 92.508144,636.52165 H 131.83347 V 658.806 H 92.508144 Z" fill="#000" data='' onclick="setDesc(this)"/>
+    <path class="zone" id="35" d="m 32.209313,532.7777 h 34.269211 v 19.47539 H 32.396577 Z" fill="#000" data='' onclick="setDesc(this)"/>
+    <path class="zone" id="36" d="m 32.209313,450.38178 h 35.205529 v 19.4754 H 32.209313 Z" fill="#000" data='' onclick="setDesc(this)"/>
+    <path class="zone" id="37" d="m 90.448246,281.09562 h 41.572484 v 18.35182 H 90.260982 Z" fill="#000" data='' onclick="setDesc(this)"/>
+    <path class="zone" id="38" d="M 67.789368,96.641123 92.789039,71.641452 h 59.643411 v 66.010368 l -19.19451,19.1945 H 67.227578 Z" fill="#000" data='' onclick="setDesc(this)"/>
+    <path class="zone" id="39" d="m 277.71169,35.967765 h 17.9773 v 36.141846 h -18.91361 z" fill="#000" data='' onclick="setDesc(this)"/>
+    <path class="zone" id="310" d="m 277.89896,96.828386 h 18.16455 V 136.34097 H 277.1499 Z" fill="#000" data='' onclick="setDesc(this)"/>
+    <path class="zone" id="311" d="m 446.62333,35.218712 h 18.9136 v 35.580055 h -19.10087 z" fill="#000" data='' onclick="setDesc(this)"/>
+    <path class="zone" id="312" d="m 570.40447,35.593238 h 20.22445 V 71.360557 H 570.2172 Z" fill="#000" data='' onclick="setDesc(this)"/>
+    <path class="zone" id="313" d="m 634.2613,36.155029 h 43.25786 v 35.767318 h -42.5088 z" fill="#000" data='' onclick="setDesc(this)"/>
+    <path class="zone" id="314" d="m 634.44856,96.266596 h 23.03341 V 136.15371 H 634.2613 Z" fill="#000" data='' onclick="setDesc(this)"/>
+    <path class="zone" id="315" d="m 783.8848,35.780502 h 41.01069 v 35.018265 h -40.82343 z" fill="#000" data='' onclick="setDesc(this)"/>
+    <path class="zone" id="316" d="m 876.5802,88.214268 h 25.09331 v 6.928747 h -25.6551 z" fill="#000" data='' onclick="setDesc(this)"/>
+    <path class="zone" id="317" d="m 923.2088,70.98603 h 51.31019 v 25.093302 h -51.12292 z" fill="#000" data='' onclick="setDesc(this)"/>
+    <path class="zone" id="318" d="m 866.65524,164.99228 h 35.76732 V 185.404 h -35.76732 z" fill="#000" data='' onclick="setDesc(this)"/>
+    <path class="zone" id="319" d="m 901.67351,209.18646 h 4.11979 v 16.85371 h -4.30706 z" fill="#000" data='' onclick="setDesc(this)"/>
+    <path class="zone" id="320" d="m 901.48624,349.25952 h 72.47096 v 7.30327 l 19.1945,19.1945 -55.52361,55.52362 -60.76699,-60.76699 7.39691,-7.39691 h 17.04097 z" fill="#000" data='' onclick="setDesc(this)"/>
+  </svg>
+  <font color='white' size='+2' face='Comfortaa'>
+  <div class="desc">
+    <h2>Информация</h2>
+    <p id='text'></p>
+  </div>
+</font>
+  <img id="floorImg" src="images/third.png" floor-data='3' alt="">
 </div>
-
+<script src='script/script.js'></script>
 </body>
+
 </html>
