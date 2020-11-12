@@ -44,11 +44,11 @@ app.get('/api/getFloorData/:id', (req, res, next) => {
 	floor = req.params.id;
 
 	if (['3','4'].includes(floor)) {
-		db.any(`SELECT place_id, count FROM camera_actual_data WHERE CAST(place_id AS VARCHAR(3)) LIKE '${floor}%'`)
+		db.any(`SELECT place_id, amount FROM camera_actual_data WHERE CAST(place_id AS VARCHAR(3)) LIKE '${floor}%'`)
 			.then(data => {
 				for ( const place of data ) {
-					place.count = Math.floor(Math.random() * 15 + 1);
-					place.percentage = Math.min(place.count, 10) * 10;
+					place.amount = Math.floor(Math.random() * 15 + 1);
+					place.percentage = Math.min(place.amount, 10) * 10;
 				}
 				res.json( { success: true, data: data } );
 			})

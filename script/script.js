@@ -36,7 +36,7 @@ function changeColor() {
 
 			places.forEach(place => {
 				$('#' + place.place_id).attr('fill', perc2color(place.percentage))
-				$('#' + place.place_id).attr('data', place.count)
+				$('#' + place.place_id).attr('data', place.amount)
 			})
 		}
 	});
