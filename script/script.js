@@ -27,7 +27,7 @@ function setDesc(elem) {
 function changeColor() {
 	let floor = $('#floorImg').attr('floor-data')
 	$.ajax({
-		url: document.location.origin + ':8000/api/getFloorData/' + floor,
+		url: document.location.origin + ':/api/getFloorData/' + floor,
 		type: 'get',
 		success: function(response) {
 			if (!response.success) return

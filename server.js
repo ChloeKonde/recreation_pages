@@ -21,11 +21,13 @@ const db = pg(cn);
 
 var bodyParser = require('body-parser');
 
-app.use(cors());
+app.use(cors({
+	origin: 'http://nsu-recreation.ml:8000'
+}));
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
-var HTTP_PORT = 8000
+var HTTP_PORT = 8000 
 
 app.listen(HTTP_PORT, () => {
 	console.log("Server running on %PORT%".replace("%PORT%", HTTP_PORT));
